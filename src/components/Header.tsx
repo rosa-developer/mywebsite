@@ -32,7 +32,7 @@ const Header = () => {
       <div className="container max-w-7xl mx-auto">
         <div className="flex items-center justify-between">
           <div className="text-xl font-medium tracking-tight">
-            <span className="font-semibold">Portfolio</span>
+            <span className="font-semibold">Rosa's Portfolio</span>
           </div>
           
           <nav className="hidden md:flex space-x-8">

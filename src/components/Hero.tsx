@@ -33,7 +33,7 @@ const Hero = () => {
             <div className="space-y-6">
               <div className="inline-block">
                 <div className="bg-accent/20 text-primary rounded-full px-4 py-1.5 text-sm font-medium mb-4 animate-fade-in">
-                  Creative Portfolio
+                  Rosa's Portfolio
                 </div>
               </div>
               
@@ -70,8 +70,8 @@ const Hero = () => {
               "before:absolute before:inset-0 before:bg-black/10 before:z-10"
             )}>
               <img 
-                src="https://images.unsplash.com/photo-1673189911631-01e59d659256?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Creative workspace" 
+                src="/lovable-uploads/a6ad1824-a751-43cd-a922-87296d631895.png" 
+                alt="Rosa at sunset" 
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
             </div>

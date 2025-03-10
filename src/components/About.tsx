@@ -32,7 +32,7 @@ const About = () => {
             
             <div className="prose prose-neutral dark:prose-invert max-w-none reveal">
               <p>
-                I'm a designer and developer with over 5 years of experience creating digital products. I specialize in designing clean, functional interfaces and building performant applications with modern web technologies.
+                I'm Rosa, a designer and developer with over 5 years of experience creating digital products. I specialize in designing clean, functional interfaces and building performant applications with modern web technologies.
               </p>
               <p>
                 My approach combines aesthetic sensibility with technical expertise to create solutions that are both beautiful and practical. I believe in the power of simplicity and that the best designs often come from reducing rather than adding.
@@ -70,12 +70,12 @@ const About = () => {
               "before:absolute before:inset-0 before:bg-black/10 before:z-10"
             )}>
               <img 
-                src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=2289&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                alt="Designer workspace" 
+                src="/lovable-uploads/a6ad1824-a751-43cd-a922-87296d631895.png" 
+                alt="Rosa at sunset" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-6 left-6 right-6 p-6 glass rounded-lg z-20 reveal stagger-2">
-                <h3 className="text-xl font-medium mb-1">John Doe</h3>
+                <h3 className="text-xl font-medium mb-1">Rosa</h3>
                 <p className="text-sm text-muted-foreground">UX Designer & Frontend Developer</p>
               </div>
             </div>
