@@ -1,10 +1,11 @@
+
 import React, { useState } from 'react';
 import { useRevealAnimation } from '@/lib/animations';
 import { toast } from 'sonner';
 
 const Contact = () => {
   useRevealAnimation();
-  const [formData, setFormData({
+  const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
@@ -175,3 +176,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
