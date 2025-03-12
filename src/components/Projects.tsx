@@ -51,7 +51,7 @@ const Projects = () => {
   const [githubProjects, setGithubProjects] = useState<Project[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const username = 'YOUR_GITHUB_USERNAME'; // Replace with your GitHub username
+  const username = 'rosa-developer'; // Updated GitHub username
 
   useEffect(() => {
     const fetchGithubProjects = async () => {
