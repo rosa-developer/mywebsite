@@ -4,11 +4,11 @@ import { useRevealAnimation } from '@/lib/animations';
 import { cn } from '@/lib/utils';
 
 const skills = [
-  { name: "UI/UX Design", level: 95 },
-  { name: "Frontend Development", level: 90 },
-  { name: "React & TypeScript", level: 85 },
-  { name: "Backend Development", level: 70 },
-  { name: "Motion Design", level: 80 }
+  { name: "Frontend Development", level: 95 },
+  { name: "UI/UX Design", level: 90 },
+  { name: "React & Node.js", level: 85 },
+  { name: "Database & SQL", level: 80 },
+  { name: "System Integration", level: 75 }
 ];
 
 const About = () => {
@@ -26,21 +26,21 @@ const About = () => {
             </div>
             
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4 reveal">
-              Designer & Developer 
-              <span className="block opacity-70">with a passion for minimalism</span>
+              IT Engineer & Frontend Developer
+              <span className="block opacity-70">with a passion for user experience</span>
             </h2>
             
             <div className="prose prose-neutral dark:prose-invert max-w-none reveal">
               <p>
-                I'm Rosa, a designer and developer with over 5 years of experience creating digital products. I specialize in designing clean, functional interfaces and building performant applications with modern web technologies.
+                I'm Rosa, an IT Engineer with a Master's degree in Network Security and 10 years of experience in software development. I specialize in creating intuitive user interfaces and developing scalable web applications using modern technologies like React, Node.js, and C#.
               </p>
               <p>
-                My approach combines aesthetic sensibility with technical expertise to create solutions that are both beautiful and practical. I believe in the power of simplicity and that the best designs often come from reducing rather than adding.
+                My background spans healthcare IT and system integrations, where I've developed a deep understanding of both frontend and backend development. After a professional break, I'm now actively pursuing opportunities in Montreal's tech scene, focusing on frontend development and UX design.
               </p>
             </div>
             
             <div className="space-y-4 reveal">
-              <h3 className="text-xl font-medium">My Skills</h3>
+              <h3 className="text-xl font-medium">Technical Skills</h3>
               
               <div className="space-y-3">
                 {skills.map((skill, index) => (

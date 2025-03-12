@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { useMouseParallax, scrollToSection } from '@/lib/animations';
 import { cn } from '@/lib/utils';
@@ -33,18 +32,17 @@ const Hero = () => {
             <div className="space-y-6">
               <div className="inline-block">
                 <div className="bg-accent/20 text-primary rounded-full px-4 py-1.5 text-sm font-medium mb-4 animate-fade-in">
-                  Rosa's Portfolio
+                  Welcome to My Portfolio
                 </div>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-semibold tracking-tight text-balance animate-fade-in">
-                <span>Crafting digital </span>
-                <span className="gradient-text bg-gradient-to-r from-accent to-blue-300">experiences</span>
-                <span> that inspire</span>
+                <span>Bridging Design </span>
+                <span className="gradient-text bg-gradient-to-r from-accent to-blue-300">& Technology</span>
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl text-balance animate-slide-up">
-                I design and build exceptional digital experiences that are functional, beautiful, and meaningful. Every pixel has a purpose.
+                Designer & Frontend Developer with 10 years of experience, specializing in creating intuitive and scalable web applications with a focus on user experience.
               </p>
             </div>
             
