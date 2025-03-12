@@ -20,6 +20,7 @@ interface GitHubRepo {
   html_url: string;
   topics: string[];
   language: string;
+  homepage?: string;
 }
 
 const projects: Project[] = [
@@ -46,12 +47,14 @@ const projects: Project[] = [
   }
 ];
 
+const featuredRepos = ["easysleep"];
+
 const Projects = () => {
   useRevealAnimation();
   const [githubProjects, setGithubProjects] = useState<Project[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const username = 'rosa-developer'; // Updated GitHub username
+  const username = 'rosa-developer';
 
   useEffect(() => {
     const fetchGithubProjects = async () => {
@@ -59,25 +62,59 @@ const Projects = () => {
       setError(null);
       
       try {
-        const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=3`);
+        // First try to fetch the featured repos
+        const featuredProjects: Project[] = [];
         
-        if (!response.ok) {
-          throw new Error(`GitHub API error: ${response.status}`);
+        for (const repoName of featuredRepos) {
+          try {
+            const response = await fetch(`https://api.github.com/repos/${username}/${repoName}`);
+            
+            if (response.ok) {
+              const repo: GitHubRepo = await response.json();
+              featuredProjects.push({
+                id: repo.id,
+                title: repo.name.replace(/-/g, ' ').replace(/_/g, ' '),
+                description: repo.description || 'No description available',
+                tags: [...(repo.topics || []), repo.language].filter(Boolean),
+                image: `https://opengraph.githubassets.com/1/${username}/${repo.name}`,
+                link: repo.homepage || repo.html_url
+              });
+            }
+          } catch (err) {
+            console.error(`Error fetching specific repo ${repoName}:`, err);
+          }
         }
         
-        const repos: GitHubRepo[] = await response.json();
-        
-        // Transform GitHub repos into project format
-        const formattedProjects = repos.map(repo => ({
-          id: repo.id,
-          title: repo.name.replace(/-/g, ' ').replace(/_/g, ' '),
-          description: repo.description || 'No description available',
-          tags: [...(repo.topics || []), repo.language].filter(Boolean),
-          image: `https://opengraph.githubassets.com/1/${username}/${repo.name}`,
-          link: repo.html_url
-        }));
-        
-        setGithubProjects(formattedProjects);
+        // Then fetch additional repos to fill up to 3 if needed
+        if (featuredProjects.length < 3) {
+          const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=${3 - featuredProjects.length}`);
+          
+          if (!response.ok) {
+            throw new Error(`GitHub API error: ${response.status}`);
+          }
+          
+          const repos: GitHubRepo[] = await response.json();
+          
+          // Filter out repos that are already in featuredProjects
+          const additionalRepos = repos.filter(repo => 
+            !featuredProjects.some(fp => fp.id === repo.id) && 
+            !featuredRepos.includes(repo.name)
+          );
+          
+          // Transform GitHub repos into project format
+          const additionalProjects = additionalRepos.map(repo => ({
+            id: repo.id,
+            title: repo.name.replace(/-/g, ' ').replace(/_/g, ' '),
+            description: repo.description || 'No description available',
+            tags: [...(repo.topics || []), repo.language].filter(Boolean),
+            image: `https://opengraph.githubassets.com/1/${username}/${repo.name}`,
+            link: repo.homepage || repo.html_url
+          }));
+          
+          setGithubProjects([...featuredProjects, ...additionalProjects]);
+        } else {
+          setGithubProjects(featuredProjects);
+        }
       } catch (err) {
         console.error('Error fetching GitHub repositories:', err);
         setError('Failed to load GitHub projects. Please try again later.');
