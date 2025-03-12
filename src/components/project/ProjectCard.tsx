@@ -23,7 +23,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           alt={project.title} 
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        {project.link && (
+        {project.link && project.link.includes('github.com') && (
           <div className="absolute top-3 right-3">
             <a 
               href={project.link} 

@@ -1,9 +1,17 @@
 
 import { Project } from '@/types/project';
 
-export const featuredRepos = ["easysleep"];
+export const featuredRepos = ["easysleep", "healthnest-kids"];
 
 export const staticProjects: Project[] = [
+  {
+    id: 4,
+    title: "EasySleep",
+    description: "A sleep tracker and ambient noise generator to help users improve their sleep quality.",
+    tags: ["React", "TypeScript", "Mobile-First"],
+    image: "https://opengraph.githubassets.com/1/rosa-developer/easysleep",
+    link: "https://easysleep.vercel.app/"
+  },
   {
     id: 1,
     title: "Minimalist E-commerce",
