@@ -1,11 +1,10 @@
-
 import React, { useState } from 'react';
 import { useRevealAnimation } from '@/lib/animations';
 import { toast } from 'sonner';
 
 const Contact = () => {
   useRevealAnimation();
-  const [formData, setFormData] = useState({
+  const [formData, setFormData({
     name: '',
     email: '',
     message: ''
@@ -76,7 +75,7 @@ const Contact = () => {
                       <circle cx="12" cy="10" r="3"></circle>
                     </svg>
                   </div>
-                  <span className="text-muted-foreground">Laval, QC</span>
+                  <span className="text-muted-foreground">Montreal, QC, Canada</span>
                 </div>
               </div>
             </div>

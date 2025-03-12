@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { scrollToSection } from '@/lib/animations';
 
@@ -92,7 +91,7 @@ const Footer = () => {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
-                <span className="text-muted-foreground text-sm">Laval, QC</span>
+                <span className="text-muted-foreground text-sm">Montreal, QC, Canada</span>
               </li>
               <li className="flex items-start space-x-2">
                 <svg className="mt-0.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
