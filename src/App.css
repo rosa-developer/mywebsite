@@ -26,6 +26,12 @@
     transform: rotate(360deg);
   }
 }
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
