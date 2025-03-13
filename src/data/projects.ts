@@ -30,11 +30,11 @@ export const staticProjects: Project[] = [
     link: "https://healthnest-kids-git-main-rosa-developers-projects.vercel.app/"
   },
   {
-   // id: 4,
+    id: 4,
     title: "Rosa's Portfolio",
     description: "Welcome to My Portfolio.",
     tags: ["UI Design", "Mobile", "Figma"],
     image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "https://simpleton-app-tool.vercel.app/"
-  }//
+  }
 ];
