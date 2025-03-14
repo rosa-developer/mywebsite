@@ -26,7 +26,7 @@ export const staticProjects: Project[] = [
     title: "healthnest-kids",
     description: "Track your child's growth journey.",
     tags: ["Web Design", "Animation", "Three.js"],
-    image: "https://chatgpt.com/g/g-2Eo3NxuS7-designergpt/c/67d44152-356c-8003-ae4b-e5f6671f2a01,
+    image: "file:///C:/Users/Rosa/Desktop/baby/image/DALL%C2%B7E%202025-03-14%2010.48.41%20-%20A%20soft%20pastel-colored%20baby-themed%20background%20with%20toys,%20clouds,%20and%20a%20warm,%20comforting%20atmosphere.%20The%20design%20should%20feel%20gentle%20and%20nurturing,%20suitab.webp,
     link: "https://healthnest-kids-git-main-rosa-developers-projects.vercel.app/"
   },
   {
