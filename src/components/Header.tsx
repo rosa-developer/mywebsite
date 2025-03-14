@@ -2,9 +2,11 @@
 import React, { useEffect, useState } from 'react';
 import { scrollToSection } from '@/lib/animations';
 import { cn } from '@/lib/utils';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +23,11 @@ const Header = () => {
     { name: 'About', id: 'about' },
     { name: 'Contact', id: 'contact' }
   ];
+
+  const handleNavClick = (id: string) => {
+    scrollToSection(id);
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header 
@@ -57,14 +64,41 @@ const Header = () => {
             </button>
           </div>
           
-          <button className="md:hidden text-foreground p-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="4" x2="20" y1="12" y2="12" />
-              <line x1="4" x2="20" y1="6" y2="6" />
-              <line x1="4" x2="20" y1="18" y2="18" />
-            </svg>
+          <button 
+            className="md:hidden text-foreground p-1"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle mobile menu"
+          >
+            {mobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </button>
         </div>
+
+        {/* Mobile menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 right-0 glass shadow-md py-4 px-6 mt-2 rounded-b-lg animate-fade-in">
+            <nav className="flex flex-col space-y-4">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => handleNavClick(item.id)}
+                  className="text-sm font-medium text-foreground py-2 border-b border-border/50 last:border-0"
+                >
+                  {item.name}
+                </button>
+              ))}
+              <button
+                onClick={() => handleNavClick('contact')}
+                className="rounded-md bg-accent bg-opacity-80 px-4 py-2 text-sm font-medium text-accent-foreground hover:bg-opacity-100 transition-all duration-300 mt-2"
+              >
+                Get in touch
+              </button>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );

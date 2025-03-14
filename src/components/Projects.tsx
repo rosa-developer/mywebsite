@@ -51,23 +51,23 @@ const Projects = () => {
   const allProjects = [...staticProjects, ...githubProjects];
 
   return (
-    <section id="projects" className="py-24 relative">
-      <div className="container max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16 max-w-2xl mx-auto">
+    <section id="projects" className="py-16 sm:py-24 relative">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16 max-w-2xl mx-auto">
           <div className="inline-block">
             <div className="bg-accent/20 text-primary rounded-full px-4 py-1.5 text-sm font-medium mb-4 reveal">
               Selected Work
             </div>
           </div>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4 reveal">Featured Projects</h2>
-          <p className="text-muted-foreground text-balance reveal">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight mb-4 reveal">Featured Projects</h2>
+          <p className="text-muted-foreground text-balance reveal px-4 sm:px-0">
             A showcase of my recent design and development work. Each project represents a unique challenge and solution.
           </p>
         </div>
         
         <ProjectsLoadingState isLoading={isLoading} error={error} />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {allProjects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}

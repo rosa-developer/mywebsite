@@ -14,10 +14,10 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
     <div 
       className={cn(
         "group bg-card rounded-xl overflow-hidden border border-border/50 shadow-sm hover:shadow-md transition-all duration-300 reveal",
-        `stagger-${index + 1}`
+        `stagger-${index % 4 + 1}`
       )}
     >
-      <div className="relative h-60 overflow-hidden">
+      <div className="relative h-48 sm:h-60 overflow-hidden">
         <img 
           src={project.image} 
           alt={project.title} 
@@ -37,17 +37,17 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           </div>
         )}
       </div>
-      <div className="p-6 space-y-4">
+      <div className="p-4 sm:p-6 space-y-3 sm:space-y-4">
         <div className="flex flex-wrap gap-2">
           {project.tags.map((tag, i) => (
-            <span key={i} className="bg-accent/20 text-xs text-accent-foreground px-2.5 py-1 rounded-full">
+            <span key={i} className="bg-accent/20 text-xs text-accent-foreground px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full">
               {tag}
             </span>
           ))}
         </div>
-        <h3 className="text-xl font-semibold">{project.title}</h3>
-        <p className="text-muted-foreground text-sm">{project.description}</p>
-        <div className="pt-2">
+        <h3 className="text-lg sm:text-xl font-semibold">{project.title}</h3>
+        <p className="text-muted-foreground text-xs sm:text-sm">{project.description}</p>
+        <div className="pt-1 sm:pt-2">
           {project.link ? (
             <a 
               href={project.link}

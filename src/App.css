@@ -1,3 +1,4 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -26,12 +27,6 @@
     transform: rotate(360deg);
   }
 }
-display: flex;
-flex-direction: column;
-align-items: center;
-
-}
-
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
@@ -45,4 +40,16 @@ align-items: center;
 
 .read-the-docs {
   color: #888;
+}
+
+/* Fix for mobile view */
+@media (max-width: 640px) {
+  #root {
+    padding: 1rem;
+  }
+  
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
