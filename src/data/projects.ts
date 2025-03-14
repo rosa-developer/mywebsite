@@ -17,7 +17,7 @@ export const staticProjects: Project[] = [
     title: "Auto Stock",
     description: "A premium platform designed for dealerships and private sellers to showcase vehicles with powerful tools and reach millions of potential buyers.",
     tags: ["UX Design", "React", "Tailwind CSS"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=6000&auto=format&fit=crop",
     link: "https://autostockcanada-rosa-developers-projects.vercel.app/"
     
   },
@@ -26,7 +26,7 @@ export const staticProjects: Project[] = [
     title: "healthnest-kids",
     description: "Track your child's growth journey.",
     tags: ["Web Design", "Animation", "Three.js"],
-    image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=5530&auto=format&fit=crop",
     link: "https://healthnest-kids-git-main-rosa-developers-projects.vercel.app/"
   },
   {
@@ -34,7 +34,7 @@ export const staticProjects: Project[] = [
     title: "Rosa's Portfolio",
     description: "Welcome to My Portfolio.",
     tags: ["UI Design", "Mobile", "Figma"],
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=4076&auto=format&fit=crop",
     link: "https://simpleton-app-tool.vercel.app/"
   }
 ];
