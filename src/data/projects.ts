@@ -9,7 +9,7 @@ export const staticProjects: Project[] = [
     title: "EasySleep",
     description: "A sleep tracker and ambient noise generator to help users improve their sleep quality.",
     tags: ["React", "TypeScript", "Mobile-First"],
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?q=80&w=8256&auto=format&fit=crop",
+    image: "https://chatgpt.com/g/g-2Eo3NxuS7-designergpt/c/67d44152-356c-8003-ae4b-e5f6671f2a01",
     link: "https://easysleep.vercel.app/"
   },
   {
