@@ -19,14 +19,13 @@ export const staticProjects: Project[] = [
     tags: ["UX Design", "React", "Tailwind CSS"],
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=6000&auto=format&fit=crop",
     link: "https://autostockcanada-rosa-developers-projects.vercel.app/"
-    
   },
   {
     id: 3,
     title: "healthnest-kids",
     description: "Track your child's growth journey.",
     tags: ["Web Design", "Animation", "Three.js"],
-    image: "file:///C:/Users/Rosa/Desktop/baby/image/DALL%C2%B7E%202025-03-14%2010.48.41%20-%20A%20soft%20pastel-colored%20baby-themed%20background%20with%20toys,%20clouds,%20and%20a%20warm,%20comforting%20atmosphere.%20The%20design%20should%20feel%20gentle%20and%20nurturing,%20suitab.webp,
+    image: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?q=80&w=2070&auto=format&fit=crop",
     link: "https://healthnest-kids-git-main-rosa-developers-projects.vercel.app/"
   },
   {
