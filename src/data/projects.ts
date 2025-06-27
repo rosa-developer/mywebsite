@@ -17,7 +17,7 @@ export const staticProjects: Project[] = [
     title: "Auto Stock",
     description: "A premium platform designed for dealerships and private sellers to showcase vehicles with powerful tools and reach millions of potential buyers.",
     tags: ["UX Design", "React", "Tailwind CSS"],
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=5760&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2066&auto=format&fit=crop",
     link: "https://autostockcanada-rosa-developers-projects.vercel.app/"
   },
   {
