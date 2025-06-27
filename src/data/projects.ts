@@ -30,6 +30,14 @@ export const staticProjects: Project[] = [
   },
   {
     id: 4,
+    title: "Food Analyser",
+    description: "An intelligent food analysis tool that helps users understand nutritional content and make healthier food choices.",
+    tags: ["React", "AI", "TypeScript"],
+    image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2070&auto=format&fit=crop",
+    link: "https://foodanalyser.vercel.app/"
+  },
+  {
+    id: 5,
     title: "Rosa's Portfolio",
     description: "Welcome to My Portfolio.",
     tags: ["UI Design", "Mobile", "Figma"],
