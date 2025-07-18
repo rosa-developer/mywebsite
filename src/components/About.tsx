@@ -61,10 +61,10 @@ const About = () => {
             
             <div className="prose prose-neutral dark:prose-invert max-w-none reveal text-sm sm:text-base">
               <p className="leading-relaxed">
-                I'm Rosa, an IT Engineer with a Master's degree in Network Security and 10 years of experience in software development. I specialize in creating intuitive user interfaces and developing scalable web applications using modern technologies like React, Node.js, and C#.
+                I'm Rosa, an IT Engineer with a Master's degree in Network Security and 10 years of experience in software development. I specialize in creating intuitive user interfaces and developing scalable web applications using modern technologies like React, Node.js, Java, and C#.
               </p>
               <p className="mt-4 sm:mt-5 leading-relaxed">
-                My background spans healthcare IT and system integrations, where I've developed a deep understanding of both frontend and backend development. After a professional break, I'm now actively pursuing opportunities in Montreal's tech scene, focusing on frontend development and UX design.
+                My background spans healthcare IT and system integrations, where I've developed expertise in Java backend development and gained a deep understanding of both frontend and backend technologies. After a professional break, I'm now actively pursuing opportunities in Montreal's tech scene, focusing on frontend development and UX design.
               </p>
             </div>
             
