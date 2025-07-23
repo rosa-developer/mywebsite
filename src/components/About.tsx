@@ -54,7 +54,7 @@ const About = () => {
               </div>
               
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-4 reveal">
-                IT Engineer & Frontend Developer
+                Software Engineer & Full-stack Developer
                 <span className="block opacity-70 text-xl sm:text-2xl mt-2 font-normal">with a passion for user experience</span>
               </h2>
             </div>
