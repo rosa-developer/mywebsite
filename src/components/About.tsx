@@ -140,7 +140,7 @@ const About = () => {
               />
               <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 p-5 sm:p-6 glass rounded-lg z-20 reveal stagger-2 shadow-lg">
                 <h3 className="text-lg sm:text-xl font-medium mb-1">Rosa</h3>
-                <p className="text-xs sm:text-sm text-muted-foreground">UX Designer & Frontend Developer</p>
+                <p className="text-xs sm:text-sm text-muted-foreground">Software Engineer & Full-stack Developer</p>
               </div>
               
               {/* Decorative elements */}
