@@ -64,7 +64,7 @@ const About = () => {
                 Creative and results-oriented Full Stack Developer with over 9 years of experience delivering robust, scalable web applications. I specialize in designing high-performance Java-based backend systems and crafting intuitive, responsive front-end interfaces.
               </p>
               <p className="mt-4 sm:mt-5 leading-relaxed">
-                My work spans enterprise-grade health insurance platforms and innovative projects like EasySleep, ensuring secure, modular, and user-centric solutions. I excel in both backend architecture and frontend development, creating seamless user experiences backed by robust system design.
+                My work spans enterprise-grade health insurance platforms and innovative projects like EasySleep, ensuring secure, modular, and user-centric solutions. I bring expertise in both backend architecture and frontend development, creating seamless experiences that delight users while maintaining system reliability and performance.
               </p>
             </div>
             
