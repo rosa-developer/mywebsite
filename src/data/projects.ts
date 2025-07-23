@@ -1,7 +1,7 @@
 
 import { Project } from '@/types/project';
 
-export const featuredRepos = ["easysleep", "healthnest-kids"];
+export const featuredRepos = ["easysleep"];
 
 export const staticProjects: Project[] = [
   {
@@ -22,26 +22,10 @@ export const staticProjects: Project[] = [
   },
   {
     id: 3,
-    title: "healthnest-kids",
-    description: "Track your child's growth journey.",
-    tags: ["Web Design", "Animation", "Three.js"],
-    image: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?q=80&w=2070&auto=format&fit=crop",
-    link: "https://healthnest-kids-git-main-rosa-developers-projects.vercel.app/"
-  },
-  {
-    id: 4,
     title: "Food Analyser",
     description: "An intelligent food analysis tool that helps users understand nutritional content and make healthier food choices.",
     tags: ["React", "AI", "TypeScript"],
     image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2070&auto=format&fit=crop",
     link: "https://foodanalyser.vercel.app/"
-  },
-  {
-    id: 5,
-    title: "Rosa's Portfolio",
-    description: "Welcome to My Portfolio.",
-    tags: ["UI Design", "Mobile", "Figma"],
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=4076&auto=format&fit=crop",
-    link: "https://simpleton-app-tool.vercel.app/"
   }
 ];
