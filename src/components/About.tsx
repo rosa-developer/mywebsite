@@ -9,7 +9,7 @@ const skills = [
   { name: "React & TypeScript", level: 90 },
   { name: "PostgreSQL & APIs", level: 85 },
   { name: "UI/UX Design", level: 80 },
-  { name: "CI/CD & Agile", level: 75 }
+  { name: "Git & Agile/TDD", level: 75 }
 ];
 
 const About = () => {
@@ -112,6 +112,18 @@ const About = () => {
                     </div>
                   </div>
                 ))}
+              </div>
+              
+              <div className="mt-6 p-4 bg-card rounded-lg border border-border/50">
+                <h4 className="font-medium mb-3 text-sm">Tools & Practices</h4>
+                <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
+                  <div>• Agile Methodologies</div>
+                  <div>• CI/CD Pipelines</div>
+                  <div>• Git Version Control</div>
+                  <div>• Jira Project Management</div>
+                  <div>• Test-Driven Development (TDD)</div>
+                  <div>• Unit Testing (JUnit, Mockito)</div>
+                </div>
               </div>
             </div>
           </div>
