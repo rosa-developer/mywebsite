@@ -5,11 +5,11 @@ import { cn } from '@/lib/utils';
 import { Award, Book, Code } from 'lucide-react';
 
 const skills = [
-  { name: "Frontend Development", level: 95 },
-  { name: "UI/UX Design", level: 90 },
-  { name: "React & Node.js", level: 85 },
-  { name: "Database & SQL", level: 80 },
-  { name: "System Integration", level: 75 }
+  { name: "Java & Spring Boot", level: 95 },
+  { name: "React & TypeScript", level: 90 },
+  { name: "PostgreSQL & APIs", level: 85 },
+  { name: "UI/UX Design", level: 80 },
+  { name: "CI/CD & Agile", level: 75 }
 ];
 
 const About = () => {
@@ -61,10 +61,10 @@ const About = () => {
             
             <div className="prose prose-neutral dark:prose-invert max-w-none reveal text-sm sm:text-base">
               <p className="leading-relaxed">
-                I'm Rosa, an IT Engineer with a Master's degree in Network Security and 10 years of experience in software development. I specialize in creating intuitive user interfaces and developing scalable web applications using modern technologies like React, Node.js, Java, and C#.
+                Creative and results-oriented Full Stack Developer with over 9 years of experience delivering robust, scalable web applications. I specialize in designing high-performance Java-based backend systems and crafting intuitive, responsive front-end interfaces.
               </p>
               <p className="mt-4 sm:mt-5 leading-relaxed">
-                My background spans healthcare IT and system integrations, where I've developed expertise in Java backend development and gained a deep understanding of both frontend and backend technologies. After a professional break, I'm now actively pursuing opportunities in Montreal's tech scene, focusing on frontend development and UX design.
+                My work spans enterprise-grade health insurance platforms and innovative projects like EasySleep, ensuring secure, modular, and user-centric solutions. I excel in both backend architecture and frontend development, creating seamless user experiences backed by robust system design.
               </p>
             </div>
             
@@ -72,20 +72,20 @@ const About = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 reveal">
               <div className="bg-card shadow-sm p-5 rounded-xl border border-border/50">
                 <Code className="h-8 w-8 text-primary mb-3" />
-                <h3 className="font-semibold mb-2">Development</h3>
-                <p className="text-sm text-muted-foreground">Creating modern, responsive web applications with React.</p>
+                <h3 className="font-semibold mb-2">Backend</h3>
+                <p className="text-sm text-muted-foreground">Java, Spring Boot, PostgreSQL, REST/GraphQL APIs, JUnit testing.</p>
               </div>
               
               <div className="bg-card shadow-sm p-5 rounded-xl border border-border/50">
                 <Book className="h-8 w-8 text-primary mb-3" />
-                <h3 className="font-semibold mb-2">Education</h3>
-                <p className="text-sm text-muted-foreground">Master's degree in Network Security and continuous learning.</p>
+                <h3 className="font-semibold mb-2">Frontend</h3>
+                <p className="text-sm text-muted-foreground">React, TypeScript, Next.js, Tailwind CSS, responsive design.</p>
               </div>
               
               <div className="bg-card shadow-sm p-5 rounded-xl border border-border/50">
                 <Award className="h-8 w-8 text-primary mb-3" />
                 <h3 className="font-semibold mb-2">Experience</h3>
-                <p className="text-sm text-muted-foreground">10 years of industry experience in software development.</p>
+                <p className="text-sm text-muted-foreground">9+ years delivering enterprise-grade applications and user-centric solutions.</p>
               </div>
             </div>
             
