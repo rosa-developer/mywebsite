@@ -43,12 +43,12 @@ const Hero = () => {
               </div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-balance animate-fade-in">
-                <span>Bridging Design </span>
-                <span className="gradient-text bg-gradient-to-r from-primary via-blue-400 to-purple-500">& Technology</span>
+                <span>Java  </span>
+                <span className="gradient-text bg-gradient-to-r from-primary via-blue-400 to-purple-500">& React Developer</span>
               </h1>
               
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 text-balance animate-slide-up">
-                Designer & Frontend Developer with 10 years of experience, specializing in creating intuitive and scalable web applications with a focus on user experience.
+                 I'm a passionate Full Stack Developer with over 9 years of experience crafting scalable, user-focused web applications. 
               </p>
             </div>
             
