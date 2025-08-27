@@ -48,7 +48,9 @@ const Hero = () => {
               </h1>
               
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 text-balance animate-slide-up">
-                 I'm a passionate Full Stack Developer with over 9 years of experience crafting scalable, user-focused web applications. 
+                Hello and welcome! I'm a passionate Full Stack Developer with over 9 years of experience crafting scalable, user-focused web applications. Specializing in Java, Spring Boot, React, and TypeScript, I build robust backend systems and intuitive front-end interfaces that solve real-world problems. From enterprise-grade health insurance platforms to innovative projects like EasySleep, my work blends technical expertise with a commitment to quality and innovation.
+                <br /><br />
+                Explore my projects, skills, and achievements to see how I bring ideas to life through clean code and thoughtful design. Let's connect to discuss how I can contribute to your next big project!
               </p>
             </div>
             
