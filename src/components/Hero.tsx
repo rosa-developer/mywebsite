@@ -34,7 +34,7 @@ const Hero = () => {
 
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center">
-          <div className="lg:col-span-3 space-y-6 sm:space-y-8 text-center lg:text-left">
+          <div className="lg:col-span-3 space-y-6 sm:space-y-8 text-left">
             <div className="space-y-4 sm:space-y-6">
               <div className="inline-block">
                 <div className="bg-primary/10 text-primary rounded-full px-4 py-1.5 text-sm font-medium mb-4 animate-fade-in">
@@ -47,14 +47,14 @@ const Hero = () => {
                 <span className="gradient-text bg-gradient-to-r from-primary via-blue-400 to-purple-500">& React Developer</span>
               </h1>
               
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 text-balance animate-slide-up">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl text-balance animate-slide-up">
                 Hello and welcome! I'm a passionate Full Stack Developer with over 9 years of experience crafting scalable, user-focused web applications. Specializing in Java, Spring Boot, React, and TypeScript, I build robust backend systems and intuitive front-end interfaces that solve real-world problems. From enterprise-grade health insurance platforms to innovative projects like EasySleep, my work blends technical expertise with a commitment to quality and innovation.
                 <br /><br />
                 Explore my projects, skills, and achievements to see how I bring ideas to life through clean code and thoughtful design. Let's connect to discuss how I can contribute to your next big project!
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <div className="flex flex-col sm:flex-row justify-start gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <button 
                 onClick={() => scrollToSection('projects')}
                 className="btn-primary flex items-center justify-center gap-2"
