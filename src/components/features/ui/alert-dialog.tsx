@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
-const AlertDialog = React.forwardRef<HTMLDivElement, DialogProps>(({ className, children, ...props }, ref) => {
+const AlertDialog = React.forwardRef<HTMLDivElement, DialogProps>(({ children, ...props }, ref) => {
 	return (
 		<Dialog {...props} ref={ref}>
 			{children}
@@ -19,9 +19,9 @@ AlertDialog.displayName = "AlertDialog";
 
 const AlertDialogTrigger = DialogTrigger;
 
-const AlertDialogContent = React.forwardRef<HTMLDivElement, DialogProps>(({ className, children, ...props }, ref) => {
+const AlertDialogContent = React.forwardRef<HTMLDivElement, DialogProps>(({ children, ...props }, ref) => {
 	return (
-		<DialogContent ref={ref} className={cn("fixed inset-0 m-auto max-w-md rounded-lg p-6", className)} {...props}>
+		<DialogContent ref={ref} className={cn("fixed inset-0 m-auto max-w-md rounded-lg p-6")} {...props}>
 			{children}
 		</DialogContent>
 	);
@@ -30,18 +30,18 @@ AlertDialogContent.displayName = "AlertDialogContent";
 
 const AlertDialogTitle = DialogTitle;
 
-const AlertDialogAction = React.forwardRef<HTMLButtonElement, DialogProps>(({ className, children, ...props }, ref) => {
+const AlertDialogAction = React.forwardRef<HTMLButtonElement, DialogProps>(({ children, ...props }, ref) => {
 	return (
-		<Button ref={ref} className={cn("w-full", className)} {...props}>
+		<Button ref={ref} className={cn("w-full")} {...props}>
 			{children}
 		</Button>
 	);
 });
 AlertDialogAction.displayName = "AlertDialogAction";
 
-const AlertDialogCancel = React.forwardRef<HTMLButtonElement, DialogProps>(({ className, children, ...props }, ref) => {
+const AlertDialogCancel = React.forwardRef<HTMLButtonElement, DialogProps>(({ children, ...props }, ref) => {
 	return (
-		<Button ref={ref} variant="outline" className={cn("w-full", className)} {...props}>
+		<Button ref={ref} variant="outline" className={cn("w-full")} {...props}>
 			{children}
 		</Button>
 	);
