@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useMouseParallax, scrollToSection } from '@/lib/animations';
 import { cn } from '@/lib/utils';
@@ -10,15 +9,18 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative min-h-screen w-full overflow-hidden flex items-center pt-20">
-      <img
-        src="/lovable-uploads/banner.png"
-        alt="Rosa Kheiri banner"
-        className="absolute inset-0 -z-10 w-full h-full object-cover"
-        decoding="async"
-        loading="eager"
-        fetchPriority="high"
-      />
-      <div className="absolute inset-0 -z-10 bg-black/30" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-primary/50 to-transparent" />
+      <picture>
+        <source srcSet="/lovable-uploads/banner-updated.webp" type="image/webp" />
+        <img
+          src="/lovable-uploads/banner-updated.png"
+          alt="Updated Rosa Kheiri banner"
+          className="absolute top-0 left-0 z-0 w-full h-1/2 object-cover"
+          decoding="async"
+          loading="eager"
+          fetchPriority="high"
+        />
+      </picture>
       <MultiParallax
         className="z-0"
         layers={[

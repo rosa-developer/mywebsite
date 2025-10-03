@@ -1,4 +1,6 @@
 
+@import url('https://rsms.me/inter/inter.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -157,7 +159,6 @@
 }
 
 /* Inter font with optimized settings */
-@import url('https://rsms.me/inter/inter.css');
 html { 
   font-family: 'Inter', sans-serif; 
   font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
