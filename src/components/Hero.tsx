@@ -1,36 +1,49 @@
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { useMouseParallax, scrollToSection } from '@/lib/animations';
 import { cn } from '@/lib/utils';
 import { ArrowDown, ArrowRight } from 'lucide-react';
+import { MultiParallax } from '@/components/parallax/MultiParallax';
 
 const Hero = () => {
   const { ref: parallaxRef, transform } = useMouseParallax(0.02);
-  const circleOneRef = useRef<HTMLDivElement>(null);
-  const circleTwoRef = useRef<HTMLDivElement>(null);
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      if (circleOneRef.current && circleTwoRef.current) {
-        const scrollY = window.scrollY;
-        circleOneRef.current.style.transform = `translateY(${scrollY * 0.15}px)`;
-        circleTwoRef.current.style.transform = `translateY(${scrollY * 0.1}px)`;
-      }
-    };
-    
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <section id="hero" className="relative min-h-screen w-full overflow-hidden flex items-center pt-20">
-      {/* Enhanced background elements */}
-      <div className="absolute inset-0 z-0">
-        <div ref={circleOneRef} className="absolute top-1/4 right-[10%] w-80 h-80 rounded-full bg-primary/20 blur-3xl opacity-30" />
-        <div ref={circleTwoRef} className="absolute bottom-1/4 left-[5%] w-96 h-96 rounded-full bg-primary/10 blur-3xl opacity-20" />
-        <div className="absolute top-[40%] left-[20%] w-40 h-40 rounded-full bg-primary/15 blur-2xl opacity-20" />
-        <div className="absolute bottom-[15%] right-[15%] w-60 h-60 rounded-full bg-primary/15 blur-2xl opacity-20" />
-      </div>
+      <img
+        src="/lovable-uploads/banner.png"
+        alt="Rosa Kheiri banner"
+        className="absolute inset-0 -z-10 w-full h-full object-cover"
+        decoding="async"
+        loading="eager"
+        fetchPriority="high"
+      />
+      <div className="absolute inset-0 -z-10 bg-black/30" />
+      <MultiParallax
+        className="z-0"
+        layers={[
+          {
+            id: 'bg-1',
+            speed: 0.15,
+            className: 'top-1/4 right-[10%] w-80 h-80 rounded-full bg-primary/20 blur-3xl opacity-30',
+          },
+          {
+            id: 'bg-2',
+            speed: 0.1,
+            className: 'bottom-1/4 left-[5%] w-96 h-96 rounded-full bg-primary/10 blur-3xl opacity-20',
+          },
+          {
+            id: 'bg-3',
+            speed: 0.06,
+            className: 'top-[40%] left-[20%] w-40 h-40 rounded-full bg-primary/15 blur-2xl opacity-20',
+          },
+          {
+            id: 'bg-4',
+            speed: -0.05,
+            className: 'bottom-[15%] right-[15%] w-60 h-60 rounded-full bg-primary/15 blur-2xl opacity-20',
+          },
+        ]}
+      />
 
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center">
@@ -80,6 +93,9 @@ const Hero = () => {
                 src="/lovable-uploads/a6ad1824-a751-43cd-a922-87296d631895.png" 
                 alt="Rosa at sunset" 
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                decoding="async"
+                loading="eager"
+                fetchPriority="high"
               />
               
               {/* Visual embellishment - decorative shape */}

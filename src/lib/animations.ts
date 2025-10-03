@@ -50,6 +50,50 @@ export function useMouseParallax(factor = 0.1) {
   return { ref, transform: `translate(${position.x}px, ${position.y}px)` };
 }
 
+// Scroll-based multi-layer parallax with requestAnimationFrame
+export interface ParallaxLayerConfig {
+  id: string;
+  speed: number; // positive moves with scroll, negative against
+  initialY?: number;
+}
+
+export function useScrollParallax(layers: ParallaxLayerConfig[]) {
+  const refs = useRef(new Map<string, HTMLDivElement | null>());
+  const latestScroll = useRef(0);
+  const ticking = useRef(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      latestScroll.current = window.scrollY || window.pageYOffset;
+      if (!ticking.current) {
+        ticking.current = true;
+        requestAnimationFrame(() => {
+          const current = latestScroll.current;
+          layers.forEach(layer => {
+            const node = refs.current.get(layer.id);
+            if (!node) return;
+            const translateY = (layer.initialY ?? 0) + current * layer.speed;
+            node.style.transform = `translate3d(0, ${translateY}px, 0)`;
+          });
+          ticking.current = false;
+        });
+      }
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll as EventListener);
+  }, [layers]);
+
+  function setLayerRef(id: string) {
+    return (el: HTMLDivElement | null) => {
+      refs.current.set(id, el);
+    };
+  }
+
+  return { setLayerRef };
+}
+
 // Smooth scroll function
 export function scrollToSection(id: string) {
   const element = document.getElementById(id);
