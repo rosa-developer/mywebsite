@@ -10,20 +10,37 @@ const Hero = () => {
   return (
     <section id="hero" className="relative min-h-screen w-full overflow-hidden flex items-center pt-20">
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-primary/50 to-transparent" />
-      <picture>
-        <source srcSet="/lovable-uploads/banner-updated.webp" type="image/webp" />
-        <img
-          src="/lovable-uploads/banner-updated.png"
-          alt="Updated Rosa Kheiri banner"
-          className="absolute top-0 left-0 z-0 w-full h-1/2 object-cover"
-          decoding="async"
-          loading="eager"
-          fetchPriority="high"
-        />
-      </picture>
+      <div className="absolute inset-x-0 top-0 z-0 h-[40vh] sm:h-[45vh] md:h-[50vh] lg:h-[55vh] overflow-hidden">
+        <picture>
+          <source srcSet="/lovable-uploads/banner-updated.webp" type="image/webp" />
+          <img
+            src="/lovable-uploads/banner-updated.png"
+            alt="Updated Rosa Kheiri banner"
+            className="w-full h-full object-cover object-center"
+            decoding="async"
+            loading="eager"
+            fetchPriority="high"
+          />
+        </picture>
+      </div>
       <MultiParallax
         className="z-0"
         layers={[
+          {
+            id: 'tint-1',
+            speed: 0.2,
+            className: 'inset-0 bg-blue-500/10 mix-blend-multiply',
+          },
+          {
+            id: 'tint-2',
+            speed: -0.1,
+            className: 'inset-0 bg-yellow-500/10 mix-blend-multiply',
+          },
+          {
+            id: 'tint-3',
+            speed: 0.06,
+            className: 'inset-0 bg-gray-500/10 mix-blend-multiply',
+          },
           {
             id: 'bg-1',
             speed: 0.15,
@@ -86,23 +103,33 @@ const Hero = () => {
             </div>
           </div>
           
-          <div ref={parallaxRef} className="lg:col-span-2 animate-fade-in float mt-8 lg:mt-0" style={{ animationDelay: '0.6s', transform }}>
-            <div className={cn(
-              "relative aspect-square max-w-xs sm:max-w-sm md:max-w-md mx-auto rounded-2xl overflow-hidden",
-              "before:absolute before:inset-0 before:bg-black/10 before:z-10 shadow-xl"
-            )}>
-              <img 
-                src="/lovable-uploads/a6ad1824-a751-43cd-a922-87296d631895.png" 
-                alt="Rosa at sunset" 
-                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                decoding="async"
-                loading="eager"
-                fetchPriority="high"
-              />
-              
-              {/* Visual embellishment - decorative shape */}
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-primary/20 rounded-full blur-xl"></div>
-              <div className="absolute -top-6 -left-6 w-20 h-20 bg-primary/20 rounded-full blur-lg"></div>
+          <div className="lg:col-span-2 animate-fade-in float mt-8 lg:mt-0" style={{ animationDelay: '0.6s' }}>
+            <div
+              ref={parallaxRef}
+              className={cn(
+                "relative aspect-square max-w-xs sm:max-w-sm md:max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl"
+              )}
+            >
+              <div
+                className={cn(
+                  "relative w-full h-full",
+                  "before:absolute before:inset-0 before:bg-black/10 before:z-10"
+                )}
+                style={{ transform, willChange: 'transform' }}
+              >
+                <img 
+                  src="/lovable-uploads/a6ad1824-a751-43cd-a922-87296d631895.png" 
+                  alt="Rosa at sunset" 
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  decoding="async"
+                  loading="eager"
+                  fetchPriority="high"
+                />
+                
+                {/* Visual embellishment - decorative shape */}
+                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-primary/20 rounded-full blur-xl"></div>
+                <div className="absolute -top-6 -left-6 w-20 h-20 bg-primary/20 rounded-full blur-lg"></div>
+              </div>
             </div>
           </div>
         </div>

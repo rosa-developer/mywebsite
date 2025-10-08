@@ -61,6 +61,12 @@ export function useScrollParallax(layers: ParallaxLayerConfig[]) {
   const refs = useRef(new Map<string, HTMLDivElement | null>());
   const latestScroll = useRef(0);
   const ticking = useRef(false);
+  const layersRef = useRef<ParallaxLayerConfig[]>(layers);
+
+  // Keep latest layers in a ref so we don't recreate listeners on every render
+  useEffect(() => {
+    layersRef.current = layers;
+  }, [layers]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,7 +75,8 @@ export function useScrollParallax(layers: ParallaxLayerConfig[]) {
         ticking.current = true;
         requestAnimationFrame(() => {
           const current = latestScroll.current;
-          layers.forEach(layer => {
+          const activeLayers = layersRef.current;
+          activeLayers.forEach(layer => {
             const node = refs.current.get(layer.id);
             if (!node) return;
             const translateY = (layer.initialY ?? 0) + current * layer.speed;
@@ -83,11 +90,15 @@ export function useScrollParallax(layers: ParallaxLayerConfig[]) {
     handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll as EventListener);
-  }, [layers]);
+  }, []);
 
   function setLayerRef(id: string) {
     return (el: HTMLDivElement | null) => {
-      refs.current.set(id, el);
+      if (el) {
+        refs.current.set(id, el);
+      } else {
+        refs.current.delete(id);
+      }
     };
   }
 
