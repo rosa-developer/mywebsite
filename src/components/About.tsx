@@ -134,7 +134,7 @@ const About = () => {
               "shadow-2xl"
             )}>
               <img 
-                src="/assets/a6ad1824-a751-43cd-a922-87296d631895.png" 
+                src={`${import.meta.env.BASE_URL}assets/a6ad1824-a751-43cd-a922-87296d631895.png`} 
                 alt="Rosa portrait" 
                 className="w-full h-full object-cover"
               />

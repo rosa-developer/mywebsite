@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="absolute inset-x-0 top-0 z-0 h-[40vh] sm:h-[45vh] md:h-[50vh] lg:h-[55vh] overflow-hidden">
         <picture>
           <img
-            src="/assets/banner.png"
+            src={`${import.meta.env.BASE_URL}assets/banner.png`}
             alt="Portfolio banner"
             className="w-full h-full object-cover object-center"
             decoding="async"
@@ -117,7 +117,7 @@ const Hero = () => {
                 style={{ transform, willChange: 'transform' }}
               >
                 <img 
-                  src="/assets/a6ad1824-a751-43cd-a922-87296d631895.png" 
+                  src={`${import.meta.env.BASE_URL}assets/a6ad1824-a751-43cd-a922-87296d631895.png`} 
                   alt="Rosa at sunset" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                   decoding="async"
