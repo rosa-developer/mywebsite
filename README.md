@@ -15,4 +15,4 @@
 
 ---
 
-👉 Do you want me to **customize the README** to match exactly what’s inside your repository (list real files like `index.html`, etc.), or should I leave it generic like this?
+Deployment: This project deploys to GitHub Pages from `my-new-branch` using Vite. The `base` in `vite.config.ts` is set to `/mywebsite/`. CI workflow is defined in `.github/workflows/github-pages.yml`.
