@@ -12,10 +12,9 @@ const Hero = () => {
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-primary/50 to-transparent" />
       <div className="absolute inset-x-0 top-0 z-0 h-[40vh] sm:h-[45vh] md:h-[50vh] lg:h-[55vh] overflow-hidden">
         <picture>
-          <source srcSet="/lovable-uploads/banner-updated.webp" type="image/webp" />
           <img
-            src="/lovable-uploads/banner-updated.png"
-            alt="Updated Rosa Kheiri banner"
+            src="/assets/banner.png"
+            alt="Portfolio banner"
             className="w-full h-full object-cover object-center"
             decoding="async"
             loading="eager"
@@ -118,7 +117,7 @@ const Hero = () => {
                 style={{ transform, willChange: 'transform' }}
               >
                 <img 
-                  src="/lovable-uploads/a6ad1824-a751-43cd-a922-87296d631895.png" 
+                  src="/assets/a6ad1824-a751-43cd-a922-87296d631895.png" 
                   alt="Rosa at sunset" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                   decoding="async"

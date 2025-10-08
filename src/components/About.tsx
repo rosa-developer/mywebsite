@@ -134,8 +134,8 @@ const About = () => {
               "shadow-2xl"
             )}>
               <img 
-                src="/lovable-uploads/a6ad1824-a751-43cd-a922-87296d631895.png" 
-                alt="Rosa at sunset" 
+                src="/assets/a6ad1824-a751-43cd-a922-87296d631895.png" 
+                alt="Rosa portrait" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 p-5 sm:p-6 glass rounded-lg z-20 reveal stagger-2 shadow-lg">
