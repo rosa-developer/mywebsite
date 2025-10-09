@@ -51,7 +51,7 @@ const Projects = () => {
   const allProjects = [...staticProjects, ...githubProjects];
 
   return (
-    <section id="projects" className="py-24 sm:py-32 relative">
+    <section id="projects" className="pt-24 sm:pt-28 pb-12 sm:pb-16 relative">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-14 sm:mb-20 max-w-2xl mx-auto">
           <div className="inline-block">
