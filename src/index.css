@@ -151,11 +151,28 @@
 
 /* Refined buttons */
 .btn-primary {
-  @apply bg-primary text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-2px];
+  @apply relative overflow-hidden bg-primary text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-2px];
 }
 
 .btn-secondary {
   @apply bg-transparent border border-border rounded-lg px-6 py-3 hover:bg-secondary/50 transition-colors duration-300;
+}
+
+/* Button shine effect */
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.35) 50%, transparent 100%);
+  transform: skewX(-20deg);
+}
+
+.btn-primary:hover::after {
+  left: 150%;
+  transition: left 700ms ease;
 }
 
 /* Inter font with optimized settings */

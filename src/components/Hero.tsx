@@ -27,37 +27,37 @@ const Hero = () => {
         layers={[
           {
             id: 'tint-1',
-            speed: 0.2,
+            speed: 0.1,
             className: 'inset-0 bg-blue-500/10 mix-blend-multiply',
           },
           {
             id: 'tint-2',
-            speed: -0.1,
+            speed: -0.05,
             className: 'inset-0 bg-yellow-500/10 mix-blend-multiply',
           },
           {
             id: 'tint-3',
-            speed: 0.06,
+            speed: 0.03,
             className: 'inset-0 bg-gray-500/10 mix-blend-multiply',
           },
           {
             id: 'bg-1',
-            speed: 0.15,
+            speed: 0.08,
             className: 'top-1/4 right-[10%] w-80 h-80 rounded-full bg-primary/20 blur-3xl opacity-30',
           },
           {
             id: 'bg-2',
-            speed: 0.1,
+            speed: 0.06,
             className: 'bottom-1/4 left-[5%] w-96 h-96 rounded-full bg-primary/10 blur-3xl opacity-20',
           },
           {
             id: 'bg-3',
-            speed: 0.06,
+            speed: 0.03,
             className: 'top-[40%] left-[20%] w-40 h-40 rounded-full bg-primary/15 blur-2xl opacity-20',
           },
           {
             id: 'bg-4',
-            speed: -0.05,
+            speed: -0.03,
             className: 'bottom-[15%] right-[15%] w-60 h-60 rounded-full bg-primary/15 blur-2xl opacity-20',
           },
         ]}

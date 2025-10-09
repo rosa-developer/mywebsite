@@ -30,6 +30,17 @@ export function useMouseParallax(factor = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const prefersReduced = typeof window !== 'undefined' &&
+      window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const isMobile = typeof window !== 'undefined' && window.matchMedia &&
+      window.matchMedia('(pointer: coarse)').matches;
+
+    if (prefersReduced || isMobile) {
+      // Disable mouse parallax for reduced motion or mobile devices
+      setPosition({ x: 0, y: 0 });
+      return;
+    }
+
     const handleMouseMove = (e: MouseEvent) => {
       if (!ref.current) return;
       
@@ -69,6 +80,26 @@ export function useScrollParallax(layers: ParallaxLayerConfig[]) {
   }, [layers]);
 
   useEffect(() => {
+    const prefersReduced = typeof window !== 'undefined' &&
+      window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+
+    const applyInitialPositions = () => {
+      const current = 0;
+      const activeLayers = layersRef.current;
+      activeLayers.forEach(layer => {
+        const node = refs.current.get(layer.id);
+        if (!node) return;
+        const translateY = (layer.initialY ?? 0) + current * 0;
+        node.style.transform = `translate3d(0, ${translateY}px, 0)`;
+      });
+    };
+
+    if (prefersReduced || isMobile) {
+      applyInitialPositions();
+      return;
+    }
+
     const handleScroll = () => {
       latestScroll.current = window.scrollY || window.pageYOffset;
       if (!ticking.current) {
