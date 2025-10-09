@@ -8,7 +8,7 @@ const Hero = () => {
   const { ref: parallaxRef, transform } = useMouseParallax(0.02);
 
   return (
-    <section id="hero" className="relative min-h-screen w-full overflow-hidden flex items-center pt-20">
+    <section id="hero" className="relative min-h-screen w-full overflow-hidden flex items-center pt-28 pb-32">
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-primary/50 to-transparent" />
       <div className="absolute inset-x-0 top-0 z-0 h-[40vh] sm:h-[45vh] md:h-[50vh] lg:h-[55vh] overflow-hidden">
         <picture>
@@ -78,14 +78,14 @@ const Hero = () => {
                 <span className="gradient-text bg-gradient-to-r from-primary via-blue-400 to-purple-500">& React Developer</span>
               </h1>
               
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl text-balance animate-slide-up">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl text-balance animate-slide-up mt-[10px]">
                 Hello and welcome! I'm a passionate Full Stack Developer with over 9 years of experience crafting scalable, user-focused web applications. Specializing in Java, Spring Boot, React, and TypeScript, I build robust backend systems and intuitive front-end interfaces that solve real-world problems. From enterprise-grade health insurance platforms to innovative projects like EasySleep, my work blends technical expertise with a commitment to quality and innovation.
                 <br /><br />
                 Explore my projects, skills, and achievements to see how I bring ideas to life through clean code and thoughtful design. Let's connect to discuss how I can contribute to your next big project!
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row justify-start gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <div className="flex flex-col sm:flex-row justify-start gap-14 animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <button 
                 onClick={() => scrollToSection('projects')}
                 className="btn-primary flex items-center justify-center gap-2"
