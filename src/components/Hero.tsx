@@ -63,10 +63,7 @@ const Hero = () => {
         ]}
       />
 
-      {/* Spacer to push intro content below the banner height with responsive cap */}
-      <div className="h-[min(40vh,12rem)] sm:h-[min(50vh,16rem)] md:h-[min(60vh,20rem)] lg:h-[min(70vh,24rem)]" aria-hidden="true" />
-
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 z-10">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 z-10 mt-[min(40vh,12rem)] sm:mt-[min(50vh,16rem)] md:mt-[min(60vh,20rem)] lg:mt-[min(70vh,24rem)]">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-20 items-center">
           <div className="lg:col-span-3 space-y-6 sm:space-y-8 text-left">
             <div className="space-y-4 sm:space-y-6">
