@@ -71,16 +71,18 @@ const Hero = () => {
                 
               </div>
               
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-balance animate-fade-in">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-balance animate-fade-in drop-shadow-md">
                 <span>Software Engineer  </span>
                 <span className="gradient-text bg-gradient-to-r from-primary via-blue-400 to-purple-500">& Full-stack Developer</span>
               </h1>
               
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl text-balance animate-slide-up mt-[10px]">
-                Hello and welcome! I'm a passionate Full Stack Developer with over 9 years of experience crafting scalable, user-focused web applications. Specializing in Java, Spring Boot, React, and TypeScript, I build robust backend systems and intuitive front-end interfaces that solve real-world problems. From enterprise-grade health insurance platforms to innovative projects like EasySleep, my work blends technical expertise with a commitment to quality and innovation.
-                <br /><br />
-                Explore my projects, skills, and achievements to see how I bring ideas to life through clean code and thoughtful design. Let's connect to discuss how I can contribute to your next big project!
-              </p>
+              <div className="bg-black/40 dark:bg-black/30 backdrop-blur-sm rounded-xl p-4 sm:p-5 max-w-3xl animate-slide-up">
+                <p className="text-base sm:text-lg md:text-xl text-white/90 text-balance mt-[10px]">
+                  Hello and welcome! I'm a passionate Full Stack Developer with over 9 years of experience crafting scalable, user-focused web applications. Specializing in Java, Spring Boot, React, and TypeScript, I build robust backend systems and intuitive front-end interfaces that solve real-world problems. From enterprise-grade health insurance platforms to innovative projects like EasySleep, my work blends technical expertise with a commitment to quality and innovation.
+                  <br /><br />
+                  Explore my projects, skills, and achievements to see how I bring ideas to life through clean code and thoughtful design. Let's connect to discuss how I can contribute to your next big project!
+                </p>
+              </div>
             </div>
             
             <div className="flex flex-col sm:flex-row justify-start gap-14 animate-fade-in" style={{ animationDelay: '0.4s' }}>
