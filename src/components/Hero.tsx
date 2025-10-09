@@ -68,14 +68,12 @@ const Hero = () => {
           <div className="lg:col-span-3 space-y-6 sm:space-y-8 text-left">
             <div className="space-y-4 sm:space-y-6">
               <div className="inline-block">
-                <div className="bg-primary/10 text-primary rounded-full px-4 py-1.5 text-sm font-medium mb-4 animate-fade-in">
-                  Welcome to My Portfolio
-                </div>
+                
               </div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-balance animate-fade-in">
-                <span>Java  </span>
-                <span className="gradient-text bg-gradient-to-r from-primary via-blue-400 to-purple-500">& React Developer</span>
+                <span>Software Engineer  </span>
+                <span className="gradient-text bg-gradient-to-r from-primary via-blue-400 to-purple-500">& Full-stack Developer</span>
               </h1>
               
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl text-balance animate-slide-up mt-[10px]">
