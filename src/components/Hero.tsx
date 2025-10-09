@@ -64,7 +64,7 @@ const Hero = () => {
       />
 
       {/* Spacer to push intro content below the banner height */}
-      <div className="h-32 sm:h-40 md:h-48 lg:h-64" aria-hidden="true" />
+      <div className="h-48 sm:h-64 md:h-80 lg:h-96" aria-hidden="true" />
 
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-20 items-center">
