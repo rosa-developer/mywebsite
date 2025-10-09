@@ -51,9 +51,9 @@ const Projects = () => {
   const allProjects = [...staticProjects, ...githubProjects];
 
   return (
-    <section id="projects" className="py-16 sm:py-24 relative">
+    <section id="projects" className="py-24 sm:py-32 relative">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-12 sm:mb-16 max-w-2xl mx-auto">
+        <div className="text-center mb-14 sm:mb-20 max-w-2xl mx-auto">
           <div className="inline-block">
             <div className="bg-accent/20 text-primary rounded-full px-4 py-1.5 text-sm font-medium mb-4 reveal">
               Selected Work
@@ -67,7 +67,7 @@ const Projects = () => {
         
         <ProjectsLoadingState isLoading={isLoading} error={error} />
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
           {allProjects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
