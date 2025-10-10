@@ -42,7 +42,7 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="pt-12 sm:pt-16 pb-28 sm:pb-32 bg-secondary/30">
+    <section id="about" className="pt-8 sm:pt-12 pb-24 sm:pb-28 bg-secondary/30">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 sm:gap-20 items-center">
           <div className="space-y-8 sm:space-y-10 order-2 lg:order-1">

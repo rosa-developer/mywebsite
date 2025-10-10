@@ -51,9 +51,9 @@ const Projects = () => {
   const allProjects = [...staticProjects, ...githubProjects];
 
   return (
-    <section id="projects" className="pt-24 sm:pt-28 pb-12 sm:pb-16 relative">
+    <section id="projects" className="pt-20 sm:pt-24 pb-8 sm:pb-12 relative">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-14 sm:mb-20 max-w-2xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12 max-w-2xl mx-auto">
           <div className="inline-block">
             <div className="bg-accent/20 text-primary rounded-full px-4 py-1.5 text-sm font-medium mb-4 reveal">
               Selected Work
