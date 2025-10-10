@@ -59,12 +59,14 @@ const Header = () => {
           </nav>
           
           <div className="hidden md:block">
-            <button
-              onClick={() => scrollToSection('contact')}
+            <a
+              href="https://calendly.com/rosa-developer/intro"
+              target="_blank"
+              rel="noreferrer noopener"
               className="rounded-md bg-primary px-5 py-2 text-sm font-medium text-white hover:bg-primary/90 transition-all duration-300"
             >
               Get in touch
-            </button>
+            </a>
           </div>
           
           <button 
@@ -96,12 +98,14 @@ const Header = () => {
               <div className="pt-2">
                 <ThemeToggle />
               </div>
-              <button
-                onClick={() => handleNavClick('contact')}
-                className="rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-white hover:bg-primary/90 transition-all duration-300 mt-2"
+              <a
+                href="https://calendly.com/rosa-developer/intro"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-white hover:bg-primary/90 transition-all duration-300 mt-2 text-center"
               >
                 Get in touch
-              </button>
+              </a>
             </nav>
           </div>
         )}
