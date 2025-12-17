@@ -78,8 +78,8 @@ const Hero = () => {
               
               <div className="bg-black/40 dark:bg-black/30 backdrop-blur-sm rounded-xl p-4 sm:p-5 max-w-3xl animate-slide-up">
                 <p className="text-base sm:text-lg md:text-xl text-white/90 text-balance mt-[10px]">
-                  Hello and welcome! I'm a passionate Full Stack Developer with over 9 years of experience crafting scalable, user-focused web applications. Specializing in Java, Spring Boot, React, and TypeScript, I build robust backend systems and intuitive front-end interfaces that solve real-world problems. From enterprise-grade health insurance platforms to innovative projects like EasySleep, my work blends technical expertise with a commitment to quality and innovation.
-                  <br /><br />
+                  Hello and welcome! I'm a passionate Software Engineer with over 10 years of experience, specializing in frontend and web development for the past 3+ years. Expert in building performant, user-centric applications using React, TypeScript, Next.js, Node.js/NestJS, and modern web technologies. Proven track record of delivering scalable solutions with strong emphasis on performance optimization, accessibility, and clean code in Agile environments. Quick learner with foundational knowledge in AI concepts and distributed architectures. Autonomous, detail-oriented collaborator eager to contribute to innovative teams.
+Technical Skills
                   Explore my projects, skills, and achievements to see how I bring ideas to life through clean code and thoughtful design. Let's connect to discuss how I can contribute to your next big project!
                 </p>
               </div>
