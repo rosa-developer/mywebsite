@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 import { Award, Book, Code } from 'lucide-react';
 
 const skills = [
-  { name: "Java & Spring Booot", level: 95 },
+  { name: " Node.js & Next.js", level: 95 },
   { name: "React & TypeScript", level: 90 },
   { name: "PostgreSQL & APIs", level: 85 },
   { name: "UI/UX Design", level: 80 },
@@ -122,8 +122,7 @@ const About = () => {
                   <div>• Git Version Control</div>
                   <div>• Jira Project Management</div>
                   <div>• Test-Driven Development (TDD)</div>
-                  <div>• Unit Testing (JUnit, Mockito)</div>
-                </div>
+                   </div>
               </div>
             </div>
           </div>
