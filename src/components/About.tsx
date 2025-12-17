@@ -61,7 +61,7 @@ const About = () => {
             
             <div className="prose prose-neutral dark:prose-invert max-w-none reveal text-sm sm:text-base">
               <p className="leading-relaxed">
-                Creative and results-oriented Full Stack Developer with over 9 years of experience delivering robust, scalable web applications. I specialize in designing high-performance Java-based backend systems and crafting intuitive, responsive front-end interfaces.
+                Creative and results-oriented Full Stack Developer with over 9 years of experience delivering robust, scalable web applications, systems and crafting intuitive, responsive front-end interfaces.
               </p>
               <p className="mt-4 sm:mt-5 leading-relaxed">
                 My work spans enterprise-grade health insurance platforms and innovative projects like EasySleep, ensuring secure, modular, and user-centric solutions. I bring expertise in both backend architecture and frontend development, creating seamless experiences that delight users while maintaining system reliability and performance.
@@ -73,7 +73,7 @@ const About = () => {
               <div className="bg-card shadow-sm p-5 rounded-xl border border-border/50">
                 <Code className="h-8 w-8 text-primary mb-3" />
                 <h3 className="font-semibold mb-2">Backend</h3>
-                <p className="text-sm text-muted-foreground">Java, Spring Boot, PostgreSQL, REST/GraphQL APIs, JUnit testing.</p>
+                <p className="text-sm text-muted-foreground">Node.js, NestJs, PostgreSQL, REST/GraphQL APIs </p>
               </div>
               
               <div className="bg-card shadow-sm p-5 rounded-xl border border-border/50">
