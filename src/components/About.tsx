@@ -61,8 +61,7 @@ const About = () => {
             
             <div className="prose prose-neutral dark:prose-invert max-w-none reveal text-sm sm:text-base">
               <p className="leading-relaxed">
-                Creative and results-oriented Full Stack Developer with over 9 years of experience delivering robust, scalable web applications, systems and crafting intuitive, responsive front-end interfaces.
-              </p>
+                I’m a full-stack developer with a strong focus on React, Next.js, and backend development using Node.js and Nest.js. . Over the past few years, I’ve built real-world projects that include authentication systems, REST APIs, PostgreSQL databases, and frontend integrations.
               <p className="mt-4 sm:mt-5 leading-relaxed">
                 My work spans enterprise-grade health insurance platforms and innovative projects like EasySleep, ensuring secure, modular, and user-centric solutions. I bring expertise in both backend architecture and frontend development, creating seamless experiences that delight users while maintaining system reliability and performance.
               </p>
